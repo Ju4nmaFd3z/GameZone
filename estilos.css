@@ -1,0 +1,119 @@
+/* Base minima para empezar */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabecera con FLEX 1.-Logo-Título 2.-Menú */
+
+.cabecera {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #0d203a;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+}
+
+/* .titulo {
+    margin: 0;
+    color: #333;
+} */
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding-left: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #187b99;
+}
+
+#contenido-principal {
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.tarjeta {
+    background: #f0f0f04f;
+    border-radius: 10px;
+    width: min(900px, 95%);
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px #333;
+}
+
+.listas {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.lista {
+    padding-left: 20px;
+}
+
+.lista li {
+    margin: 0.25rem 0;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.tabla td, .tabla th {
+    border: solid 1px #cccccc;
+    padding: 10px;
+    background: #fafafa;
+}
+
+.tabla th {
+    color: #f5f5f5;
+    background: #0d203a;
+    text-align: center;
+}
+
+table td {
+    text-align: left;
+    color: #000;
+    white-space: nowrap;
+}
+
+.pie {
+    font-weight: bold;
+    color: #f5f5f5;
+    font-size: 14px;
+    padding: 1rem;
+    background: #0d203a;
+    text-align: center;
+}
