@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Registro de usuario - GameZone">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Registro - GameZone</title>
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="brand">
+            <img class="logo" src="imagenes/gamezone-logo.png" alt="Logo de GameZone">
+        </div>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="guias.html">Guías</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido-principal">
+        <section class="tarjeta-intro">
+            <h2>Registro de Usuario</h2>
+            <p>Únete a la comunidad de GameZone</p>
+        </section>
+
+        <section class="tarjeta">
+            <form name="registro" action="registro.html" method="post">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="name" id="nombre" placeholder="Sergio Sánchez" required>
+                    <span class="ayuda">Introduce tu nombre completo</span>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" required>
+                </div>
+                <div>
+                    <label for="clave">Contraseña:</label>
+                    <input type="password" name="passwd" id="clave" minlength="6" maxlength="12" placeholder="Mínimo 6 caracteres" required>
+                    <span class="ayuda">Entre 6 y 12 caracteres</span>
+                </div>
+                <div>
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="age" id="edad" min="18" max="120" placeholder="Ej: 25" required>
+                </div>
+                <div>
+                    <label for="dni">DNI:</label>
+                    <input type="text" name="id" id="dni" pattern="[0-9]{8}[A-Za-z]{1}" placeholder="12345678A" maxlength="9" required>
+                    <span class="ayuda">8 números y 1 letra (Ej: 12345678A)</span>
+                </div>
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>&copy; 2025 Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>

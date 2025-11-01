@@ -63,12 +63,41 @@ body {
 }
 
 .tarjeta {
-    background: #f0f0f04f;
+    background: #ffffff;
     border-radius: 10px;
     width: min(900px, 95%);
     margin: 1.5rem auto;
     padding: 1.5rem;
     box-shadow: 0 2px 5px #333;
+}
+
+.tarjeta h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #0d203a;
+}
+
+.tarjeta-intro {
+    text-align: center;
+    background: #0d203a;
+    color: #f5f5f5;
+    border-radius: 10px;
+    width: min(900px, 95%);
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+}
+
+.tarjeta-intro h2 {
+    color: #f5f5f5;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.tarjeta-intro p {
+    font-size: 1.1rem;
+    margin: 0;
+    opacity: 0.9;
+    padding-bottom: 1.5rem;
 }
 
 .listas {
@@ -107,6 +136,69 @@ table td {
     text-align: left;
     color: #000;
     white-space: nowrap;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0d203a;
+}
+
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    resize: vertical;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #0d203a;
+}
+
+button {
+    padding: 0.75rem;
+    background: #0d203a;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 0.5rem;
+}
+
+button:hover {
+    background: #187b99;
+}
+
+.ayuda {
+    font-size: 12px;
+    color: #666;
+    margin-top: 0.25rem;
 }
 
 .pie {

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página Web de Videojuegos">
+    <meta name="description" content="Inicio - GameZone">
     <link rel="stylesheet" href="estilos.css">
     <title>GameZone</title>
 </head>
@@ -17,15 +17,16 @@
         </div>
         <nav class="navegacion">
             <ul class="menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Noticias</a></li>
-                <li><a href="#">Guías</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="guias.html">Guías</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main id="contenido-principal">
-        <section class="intro tarjeta">
+        <section class="tarjeta-intro">
             <h2>Bienvenid@ a GameZone</h2>
             <p>Portal de ejemplo para practicar HTML y CSS</p>
         </section>
@@ -45,8 +46,7 @@
                     <ol class="lista">
                         <li>Te sobra la pasta</li>
                         <li>Eres muy friki</li>
-                        <li>Te explotas sexualmente</li>
-                        <li>GTA VI, Nada más que añadir</li>
+                        <li>Tengo mucho tiempo libre</li>
                     </ol>
                 </div>
             </div>
@@ -79,29 +79,10 @@
             </table>
         </section>
         <section class="tarjeta">
-            <form name="buscar" action="buscar.html" method="get">
+            <form name="buscar" action="#" method="get">
                 <label for="busqueda">Buscar juego:</label>
-                <input type="search" name="busqueda" id="busqueda"
-                placeholder="Escribe el título del juego" required>
+                <input type="search" name="busqueda" id="busqueda" placeholder="Escribe el título del juego" required>
                 <button type="submit">Buscar</button>
-            </form>
-        </section>
-        <section class="tarjeta">
-            <h2>Registro de usuario</h2>
-            <form name="registro" action="registro.html" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="name" id="nombre" required>
-
-                <label for="clave">Contraseña:</label>
-                <input type="password" name="passwd" id="clave" minlength="6" maxlength="12" required>
-
-                <label for="edad">Edad:</label>
-                <input type="text" name="age" id="edad" min="0" required>
-
-                <label for="dni">DNI:</label>
-                <input type="text" name="id" id="dni" pattern="[0-9]{8}[A-Za-z]{1}" required>
-
-                <button type="submit">Registrar</button>
             </form>
         </section>
     </main>
