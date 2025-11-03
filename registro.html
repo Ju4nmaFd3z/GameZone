@@ -52,9 +52,8 @@
                     <input type="number" name="age" id="edad" min="18" max="120" placeholder="Ej: 25" required>
                 </div>
                 <div>
-                    <label for="dni">DNI:</label>
-                    <input type="text" name="id" id="dni" pattern="[0-9]{8}[A-Za-z]{1}" placeholder="12345678A" maxlength="9" required>
-                    <span class="ayuda">8 números y 1 letra (Ej: 12345678A)</span>
+                    <label for="dni">DNI/NIE:</label>
+                    <input type="text" name="id" id="dni" pattern="([X-Zx-z]|[0-9])[0-9]{7}[A-Za-z]" placeholder="12345678A / X1234567A" maxlength="9" required>
                 </div>
                 <button type="submit">Registrar</button>
             </form>

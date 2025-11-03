@@ -30,32 +30,91 @@
             <p>Envíanos tus dudas o sugerencias</p>
         </section>
         <section class="tarjeta">
-            <h2>Formulario de contacto</h2>
-            <form name="contacto" action="contacto.html" method="post">
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required>
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="tu@email.com" required>
-                </div>
-                <div>
-                    <label for="asunto">Asunto:</label>
-                    <input type="text" name="asunto" id="asunto" placeholder="Tema del mensaje" required>
-                </div>
-                <div>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea name="mensaje" id="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
-                </div>
-                <button type="submit">Enviar</button>
+            <!-- <h2>Formulario de contacto</h2> -->
+            <form name="contacto" action="contacto.html" method="post" autocomplete="off">
+                <fieldset>
+                    <legend>Formulario de contacto</legend>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="categoria">Categoría de Juego:</label>
+                        <select name="categoria" id="categoria">
+                            <option disabled selected>Selecciona Categoría</option>
+                            <option value="rol">Rol</option>
+                            <option value="aventura">Aventura</option>
+                            <option value="shooter">Shooter</option>
+                            <option value="deportes">Deportes</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="form-row">
+                        <label>Plataforma:</label>
+                        <label>
+                            <input type="radio" name="plataforma" id="plataforma" value="pc" required>
+                            <p>PC</p>
+                        </label>
+                        <label>
+                            <input type="radio" name="plataforma" id="plataforma" value="ps5" required>
+                            <p>PS5</p>
+                        </label>
+                        <label>
+                            <input type="radio" name="plataforma" id="plataforma" value="ns" required>
+                            <p>Nintendo Switch</p>
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label>Suscribirse a noticias - <input type="checkbox" name="subcripcion" checked></label>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="hidden" name="product-id" value="1234">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="tu@email.com" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" name="asunto" id="asunto" placeholder="Tema del mensaje" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..."
+                            required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar Formulario</button>
+                </fieldset>
             </form>
         </section>
         <section class="tarjeta">
-            <h2>Otros datos de contacto</h2>
-            <p><strong>Email:</strong> info@gamezone.com</p>
-            <p><strong>Teléfono:</strong> +34 912 345 678</p>
-            <p><strong>Horario:</strong> Lunes a Viernes, 9:00 - 18:00</p>
+            <h2>Otras Opciones</h2>
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th colspan="2">Datos de Contacto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Email:</strong></td>
+                        <td>info@gamezone.com</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Teléfono:</strong></td>
+                        <td>+34 912 345 678</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Horario:</strong></td>
+                        <td>Lunes a Viernes, 9:00 - 18:00</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
     <footer class="pie">
