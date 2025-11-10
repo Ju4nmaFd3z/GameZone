@@ -302,3 +302,104 @@ button {
     margin-top: 1rem;
     margin-right: 8px;
 }
+
+/* Sección Tienda */
+
+.tienda {
+    width: 100px;
+}
+
+/* Para mayor especificidad, aplico las dos clases a la vez */
+
+.tarjeta.tienda {
+    width: min(1200px, 95%);
+
+}
+
+.lista-cards--flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.card {
+    width: 280px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    padding: 12px;
+}
+
+.card-imagen {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.card-titulo {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 8px 0 4px;
+}
+
+.card-descripcion {
+    font-size: 0.9rem;
+    color: #666;
+    min-height: 3.5rem;
+}
+
+.card-precio {
+    color: #b60000;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.card-boton {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #2c3e50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* Sección Grid: Introducción visual */
+
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px; /* 3 columnas de altura fija */
+    grid-template-rows: 100px 100px; /* 2 filas de altura fija */
+    gap: 10px; /* 3 Separación uniforme entre celdas */
+    background-color: #eaeaea;
+    padding: 10px;
+}
+
+.item-grid:nth-child(1) {
+    background-color: #b60000;
+}
+
+.item-grid:nth-child(2) {
+    background-color: #0031b6;
+}
+
+.item-grid:nth-child(3) {
+    background-color: #7fb600;
+}
+
+.item-grid:nth-child(4) {
+    background-color: #b6006a;
+}
+
+.item-grid:nth-child(5) {
+    background-color: #b69b00;
+}
+
+.item-grid:nth-child(6) {
+    background-color: #00b6b6;
+}
