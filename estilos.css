@@ -371,35 +371,81 @@ button {
 
 /* Sección Grid: Introducción visual */
 
+.parent {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 200px 2fr 1fr;
+    grid-template-rows: 100px 1fr 60px;
+    gap: 10px;
+    grid-template-areas:
+    "header header  header"
+    "nav    main    aside"
+    "footer footer  footer"
+}
+
+.area-header {
+    background: blue;
+    grid-area: header;
+}
+
+.area-nav {
+    background: aquamarine;
+    grid-area: nav;
+}
+
+.area-main {
+    background: green;
+    grid-area: main;
+}
+
+.area-aside {
+    background: red;
+    grid-area: aside;
+}
+
+.area-footer {
+    background: orange;
+    grid-area: footer;
+}
+
 .contenedor-grid {
     display: grid;
-    grid-template-columns: 200px 200px 200px; /* 3 columnas de altura fija */
-    grid-template-rows: 100px 100px; /* 2 filas de altura fija */
-    gap: 10px; /* 3 Separación uniforme entre celdas */
+    /* grid-template-columns: 200px 200px 200px; 3 columnas de altura fija */
+    grid-template-columns: repeat(3, 150px);
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-rows: 100px 100px; 2 filas de altura fija */
+    grid-template-rows: repeat(4, 20px);
+    /* grid-template: 100px 100px / 200px 200px 200px; Atajo rows-columns */
+    row-gap: 5px;
+    column-gap: 25px;
+    /* gap: 5px 25px; */
+    /* gap: 10px; 3 Separación uniforme entre celdas */
     background-color: #eaeaea;
     padding: 10px;
+
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    /* Alineación dentro de cada celda  */
+    justify-items: center;
+    align-items: center;
+    box-sizing: content-box;
 }
 
-.item-grid:nth-child(1) {
-    background-color: #b60000;
-}
+/* .item-3 {background: purple;} */
 
-.item-grid:nth-child(2) {
-    background-color: #0031b6;
-}
-
-.item-grid:nth-child(3) {
-    background-color: #7fb600;
-}
-
-.item-grid:nth-child(4) {
-    background-color: #b6006a;
-}
-
-.item-grid:nth-child(5) {
-    background-color: #b69b00;
-}
-
-.item-grid:nth-child(6) {
-    background-color: #00b6b6;
-}
+.contenedor-grid :nth-child(01) {background-color: #b60000;}
+.contenedor-grid :nth-child(02) {background-color: #0031b6;}
+.contenedor-grid :nth-child(03) {background-color: #7fb600;}
+.contenedor-grid :nth-child(04) {background-color: #b6006a;}
+.contenedor-grid :nth-child(05) {background-color: #b69b00;}
+.contenedor-grid :nth-child(06) {background-color: #00b6b6;}
+.contenedor-grid :nth-child(07) {background-color: #3e6610;}
+.contenedor-grid :nth-child(08) {background-color: #f5e342;}
+.contenedor-grid :nth-child(09) {background-color: #0f0453;}
+.contenedor-grid :nth-child(10) {background-color: #fa608e;}
+.contenedor-grid :nth-child(11) {background-color: #53041c;}
+.contenedor-grid :nth-child(12) {background-color: #effd2b;}
