@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Guías de videojuegos - GameZone">
     <link rel="stylesheet" href="/estilos.css">
-    <title>Guías - GameZone</title>
+
+    <!-- Preconexión a las tipografías de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Lexend:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>GameZone</title>
 </head>
 
 <body>
@@ -20,203 +26,234 @@
                 <li><a href="/pages/tienda.html">Tienda</a></li>
                 <li><a href="/pages/juegos.html">Juegos</a></li>
                 <li><a href="/pages/noticias.html">Noticias</a></li>
-                <li><a href="/pages/guias.html">Guías</a></li>
+                <li><a href="/pages/guias.html" class="activo">Guías</a></li>
                 <li><a href="/pages/registro.html">Registro</a></li>
                 <li><a href="/pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <main id="contenido-principal">
-        <section class="tarjeta-intro">
-            <h2>Guías y Tutoriales</h2>
-            <p>Todo lo que necesitas saber para dominar tus juegos favoritos</p>
-        </section>
-        <article class="tarjeta">
-            <h2>GTA V: Guía completa para principiantes</h2>
-            <h3>Primeros pasos en Los Santos</h3>
-            <p>Grand Theft Auto V puede ser abrumador al principio. Esta guía te ayudará a empezar con buen pie en el
-                mundo del crimen organizado.</p>
-            <h3>Consejos básicos</h3>
-            <div class="listas">
-                <div>
-                    <h4>Cosas que hacer primero</h4>
-                    <ol class="lista">
-                        <li>Completa las misiones de tutorial</li>
-                        <li>Desbloquea los tres personajes principales</li>
-                        <li>Consigue tu primer vehículo personal</li>
-                        <li>Explora el mapa para activar puntos rápidos</li>
-                        <li>Invierte en propiedades rentables</li>
-                    </ol>
-                    <h4>Errores comunes a evitar</h4>
-                    <ul class="lista">
-                        <li>No gastes todo el dinero en coches al inicio</li>
-                        <li>Evita peleas innecesarias con la policía</li>
-                        <li>No ignores las misiones secundarias</li>
-                        <li>Guarda tu progreso frecuentemente</li>
-                        <li>No vendas las acciones demasiado pronto</li>
-                    </ul>
+    <div class="layout-guias-contenido">
+        <!-- Aquí introduciremos Menú Lateral + Contenido -->
+        <main id="contenido-principal">
+            <section class="tarjeta-intro">
+                <h2>Guías y Tutoriales</h2>
+                <p>Todo lo que necesitas saber para dominar tus juegos favoritos</p>
+            </section>
+            <article class="tarjeta">
+                <h2>GTA V: Guía completa para principiantes</h2>
+                <h3>Primeros pasos en Los Santos</h3>
+                <p>Grand Theft Auto V puede ser abrumador al principio. Esta guía te ayudará a empezar con buen pie en
+                    el
+                    mundo del crimen organizado.</p>
+                <h3>Consejos básicos</h3>
+                <div class="listas">
+                    <div>
+                        <h4>Cosas que hacer primero</h4>
+                        <ol class="lista">
+                            <li>Completa las misiones de tutorial</li>
+                            <li>Desbloquea los tres personajes principales</li>
+                            <li>Consigue tu primer vehículo personal</li>
+                            <li>Explora el mapa para activar puntos rápidos</li>
+                            <li>Invierte en propiedades rentables</li>
+                        </ol>
+                        <h4>Errores comunes a evitar</h4>
+                        <ul class="lista">
+                            <li>No gastes todo el dinero en coches al inicio</li>
+                            <li>Evita peleas innecesarias con la policía</li>
+                            <li>No ignores las misiones secundarias</li>
+                            <li>Guarda tu progreso frecuentemente</li>
+                            <li>No vendas las acciones demasiado pronto</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <h3>Mejores formas de ganar dinero</h3>
-            <table class="tabla">
-                <thead>
-                    <tr>
-                        <th>Método</th>
-                        <th>Dificultad</th>
-                        <th>Ganancia estimada</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Misiones de asesinato de Lester</td>
-                        <td>Media</td>
-                        <td>$2.000.000.000+</td>
-                    </tr>
-                    <tr>
-                        <td>Atracos principales</td>
-                        <td>Alta</td>
-                        <td>$20.000.000 - $40.000.000</td>
-                    </tr>
-                    <tr>
-                        <td>Inversiones en la bolsa</td>
-                        <td>Media</td>
-                        <td>Variable</td>
-                    </tr>
-                    <tr>
-                        <td>Propiedades de negocios</td>
-                        <td>Baja</td>
-                        <td>$5.000 - $20.000/semana</td>
-                    </tr>
-                </tbody>
-            </table>
-        </article>
-        <article class="tarjeta">
-            <h2>Red Dead Redemption 2: Guía de supervivencia</h2>
-            <h3>Sobrevive en el salvaje oeste</h3>
-            <p>El mundo de RDR2 es despiadado. Aprende a sobrevivir, cazar y prosperar en esta épica aventura del oeste.
-            </p>
-            <h3>Sistema de Honor</h3>
-            <div class="listas">
-                <div>
-                    <h4>Acciones que suben el honor</h4>
-                    <ul class="lista">
-                        <li>Ayudar a extraños en apuros</li>
-                        <li>Donar al campamento</li>
-                        <li>Saludar a la gente del pueblo</li>
-                        <li>Devolver peces pequeños al agua</li>
-                        <li>Hacer buenas acciones en misiones</li>
-                    </ul>
+                <h3>Mejores formas de ganar dinero</h3>
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th>Método</th>
+                            <th>Dificultad</th>
+                            <th>Ganancia estimada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Misiones de asesinato de Lester</td>
+                            <td>Media</td>
+                            <td>$2.000.000.000+</td>
+                        </tr>
+                        <tr>
+                            <td>Atracos principales</td>
+                            <td>Alta</td>
+                            <td>$20.000.000 - $40.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>Inversiones en la bolsa</td>
+                            <td>Media</td>
+                            <td>Variable</td>
+                        </tr>
+                        <tr>
+                            <td>Propiedades de negocios</td>
+                            <td>Baja</td>
+                            <td>$5.000 - $20.000/semana</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article class="tarjeta">
+                <h2>Red Dead Redemption 2: Guía de supervivencia</h2>
+                <h3>Sobrevive en el salvaje oeste</h3>
+                <p>El mundo de RDR2 es despiadado. Aprende a sobrevivir, cazar y prosperar en esta épica aventura del
+                    oeste.
+                </p>
+                <h3>Sistema de Honor</h3>
+                <div class="listas">
+                    <div>
+                        <h4>Acciones que suben el honor</h4>
+                        <ul class="lista">
+                            <li>Ayudar a extraños en apuros</li>
+                            <li>Donar al campamento</li>
+                            <li>Saludar a la gente del pueblo</li>
+                            <li>Devolver peces pequeños al agua</li>
+                            <li>Hacer buenas acciones en misiones</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Acciones que bajan el honor</h4>
+                        <ul class="lista">
+                            <li>Robar y asaltar</li>
+                            <li>Matar inocentes</li>
+                            <li>Amenazar a la gente</li>
+                            <li>Abandonar tu caballo herido</li>
+                            <li>No pagar las deudas</li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <h4>Acciones que bajan el honor</h4>
-                    <ul class="lista">
-                        <li>Robar y asaltar</li>
-                        <li>Matar inocentes</li>
-                        <li>Amenazar a la gente</li>
-                        <li>Abandonar tu caballo herido</li>
-                        <li>No pagar las deudas</li>
-                    </ul>
+                <h3>Mejores armas por categoría</h3>
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th>Categoría</th>
+                            <th>Arma recomendada</th>
+                            <th>Dónde conseguirla</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Revólver</td>
+                            <td>Schofield Revolver</td>
+                            <td>Tienda de armas - Valentine</td>
+                        </tr>
+                        <tr>
+                            <td>Rifle</td>
+                            <td>Lancaster Repeater</td>
+                            <td>Tienda de armas - Rhodes</td>
+                        </tr>
+                        <tr>
+                            <td>Escopeta</td>
+                            <td>Pump-Action Shotgun</td>
+                            <td>Tienda de armas - Saint Denis</td>
+                        </tr>
+                        <tr>
+                            <td>Rifle de francotirador</td>
+                            <td>Rolling Block Rifle</td>
+                            <td>Tienda de armas - Cualquier ciudad</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article class="tarjeta">
+                <h2>Elden Ring: Guía para nuevos jugadores</h2>
+                <h3>Tu primera aventura souls-like</h3>
+                <p>Elden Ring puede ser intimidante, pero con estos consejos estarás preparado para enfrentar las
+                    Tierras
+                    Intermedias.</p>
+                <h3>Consejos esenciales</h3>
+                <div class="listas">
+                    <div>
+                        <h4>Primeros pasos</h4>
+                        <ol class="lista">
+                            <li>Elige tu clase según tu estilo de juego</li>
+                            <li>Explora Limgrave antes de ir a Stormveil</li>
+                            <li>Consigue tu montura Torrent cuanto antes</li>
+                            <li>Activa los sitios de gracia que encuentres</li>
+                            <li>No tengas miedo de huir de enemigos fuertes</li>
+                        </ol>
+                        <h4>Construcción de personaje</h4>
+                        <ul class="lista">
+                            <li>Sube Vigor para tener más vida</li>
+                            <li>Especialízate en un tipo de arma</li>
+                            <li>Equilibra ofensiva y defensiva</li>
+                            <li>Experimenta con diferentes builds</li>
+                            <li>No olvides mejorar tu frasco sagrado</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <h3>Mejores armas por categoría</h3>
-            <table class="tabla">
-                <thead>
-                    <tr>
-                        <th>Categoría</th>
-                        <th>Arma recomendada</th>
-                        <th>Dónde conseguirla</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Revólver</td>
-                        <td>Schofield Revolver</td>
-                        <td>Tienda de armas - Valentine</td>
-                    </tr>
-                    <tr>
-                        <td>Rifle</td>
-                        <td>Lancaster Repeater</td>
-                        <td>Tienda de armas - Rhodes</td>
-                    </tr>
-                    <tr>
-                        <td>Escopeta</td>
-                        <td>Pump-Action Shotgun</td>
-                        <td>Tienda de armas - Saint Denis</td>
-                    </tr>
-                    <tr>
-                        <td>Rifle de francotirador</td>
-                        <td>Rolling Block Rifle</td>
-                        <td>Tienda de armas - Cualquier ciudad</td>
-                    </tr>
-                </tbody>
-            </table>
-        </article>
-        <article class="tarjeta">
-            <h2>Elden Ring: Guía para nuevos jugadores</h2>
-            <h3>Tu primera aventura souls-like</h3>
-            <p>Elden Ring puede ser intimidante, pero con estos consejos estarás preparado para enfrentar las Tierras
-                Intermedias.</p>
-            <h3>Consejos esenciales</h3>
-            <div class="listas">
-                <div>
-                    <h4>Primeros pasos</h4>
-                    <ol class="lista">
-                        <li>Elige tu clase según tu estilo de juego</li>
-                        <li>Explora Limgrave antes de ir a Stormveil</li>
-                        <li>Consigue tu montura Torrent cuanto antes</li>
-                        <li>Activa los sitios de gracia que encuentres</li>
-                        <li>No tengas miedo de huir de enemigos fuertes</li>
-                    </ol>
-                    <h4>Construcción de personaje</h4>
-                    <ul class="lista">
-                        <li>Sube Vigor para tener más vida</li>
-                        <li>Especialízate en un tipo de arma</li>
-                        <li>Equilibra ofensiva y defensiva</li>
-                        <li>Experimenta con diferentes builds</li>
-                        <li>No olvides mejorar tu frasco sagrado</li>
-                    </ul>
+                <h3>Jefes principales por orden recomendado</h3>
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th>Jefe</th>
+                            <th>Ubicación</th>
+                            <th>Nivel recomendado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Margit, el Augurio Funesto</td>
+                            <td>Castillo Stormveil</td>
+                            <td>20-30</td>
+                        </tr>
+                        <tr>
+                            <td>Godrick el Injertado</td>
+                            <td>Castillo Stormveil</td>
+                            <td>30-40</td>
+                        </tr>
+                        <tr>
+                            <td>Rennala, Reina de la Luna Llena</td>
+                            <td>Academia de Raya Lucaria</td>
+                            <td>40-50</td>
+                        </tr>
+                        <tr>
+                            <td>Radahn el Azote de las Estrellas</td>
+                            <td>Castillo Rojizo</td>
+                            <td>60-70</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <section class="tarjeta guias-videos">
+                <h2>Videos Destacados</h2>
+                <hr>
+                <!-- Contenedor Grid -->
+                <div class="guias-grid">
+                    <article class="guia-video">
+                        <h3>Guía 1: GTA V</h3>
+                        <iframe src="https://www.youtube-nocookie.com/embed/gx3TR28zmJA?si=p2lfkqFoKA_tMbky"
+                            title="Guía Definitiva GTA V" referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen loading="lazy"></iframe>
+                    </article>
+                    <article class="guia-video">
+                        <h3>Guía 2: Red Dead Redemption 2</h3>
+                        <iframe src="https://www.youtube-nocookie.com/embed/tAoFhyju0N8?si=ikUqS5gb81EDNfAS"
+                            title="Guía Definitiva Red Dead Redemption 2"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                    </article>
+                    <article class="guia-video">
+                        <h3>Guía 3: Elden Ring</h3>
+                        <iframe src="https://www.youtube-nocookie.com/embed/kUZLNby_RyQ"
+                            title="Guía Definitiva Elden Ring" referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen loading="lazy"></iframe>
+                    </article>
+                    <article class="guia-video">
+                        <h3>Guía 4: Juegos Must Have Guide</h3>
+                        <iframe src="https://www.youtube-nocookie.com/embed/loDd3kxvwCQ?si=ZjbSnS9iy5lcsz-j"
+                            title="Guía Definitiva Elden Ring" referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen loading="lazy"></iframe>
+                    </article>
                 </div>
-            </div>
-            <h3>Jefes principales por orden recomendado</h3>
-            <table class="tabla">
-                <thead>
-                    <tr>
-                        <th>Jefe</th>
-                        <th>Ubicación</th>
-                        <th>Nivel recomendado</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Margit, el Augurio Funesto</td>
-                        <td>Castillo Stormveil</td>
-                        <td>20-30</td>
-                    </tr>
-                    <tr>
-                        <td>Godrick el Injertado</td>
-                        <td>Castillo Stormveil</td>
-                        <td>30-40</td>
-                    </tr>
-                    <tr>
-                        <td>Rennala, Reina de la Luna Llena</td>
-                        <td>Academia de Raya Lucaria</td>
-                        <td>40-50</td>
-                    </tr>
-                    <tr>
-                        <td>Radahn el Azote de las Estrellas</td>
-                        <td>Castillo Rojizo</td>
-                        <td>60-70</td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
-            <iframe width="560" height="315"
-                src="https://www.youtube-nocookie.com/embed/kUZLNby_RyQ?si=lb8tFfuCakmhjYRU"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </article>
-    </main>
+            </section>
+        </main>
+    </div>
     <footer class="pie">
         <p>&copy; 2025 Todos los derechos reservados</p>
     </footer>

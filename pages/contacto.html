@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contacto - GameZone">
     <link rel="stylesheet" href="/estilos.css">
-    <title>Contacto - GameZone</title>
+
+    <!-- Preconexión a las tipografías de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Lexend:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>GameZone</title>
 </head>
 
 <body>
@@ -16,10 +22,11 @@
         </div>
         <nav class="navegacion">
             <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/pages/tienda.html">Tienda</a></li>
+                <li><a href="/pages/juegos.html">Juegos</a></li>
                 <li><a href="/pages/noticias.html">Noticias</a></li>
-                <li><a href="/pages/guias.html">Guías</a></li>
+                <li><a href="/pages/guias.html" class="activo">Guías</a></li>
                 <li><a href="/pages/registro.html">Registro</a></li>
                 <li><a href="/pages/contacto.html">Contacto</a></li>
             </ul>
@@ -51,9 +58,15 @@
                     </div>
                     <div class="form-row">
                         <label>Plataforma:</label>
-                        <label><input type="radio" name="plataforma" value="pc" required> <p>PC</p></label>
-                        <label><input type="radio" name="plataforma" value="ps5" required> <p>PS5</p></label>
-                        <label><input type="radio" name="plataforma" value="ns" required> <p>Nintendo Switch</p></label>
+                        <label><input type="radio" name="plataforma" value="pc" required>
+                            <p>PC</p>
+                        </label>
+                        <label><input type="radio" name="plataforma" value="ps5" required>
+                            <p>PS5</p>
+                        </label>
+                        <label><input type="radio" name="plataforma" value="ns" required>
+                            <p>Nintendo Switch</p>
+                        </label>
                     </div>
                     <div class="form-row">
                         <label><input type="checkbox" name="subcripcion" checked> Suscribirse a noticias</label>
@@ -69,7 +82,8 @@
                     </div>
                     <div class="form-row">
                         <label for="mensaje">Mensaje:</label>
-                        <textarea name="mensaje" id="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        <textarea name="mensaje" id="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..."
+                            required></textarea>
                     </div>
                     <div class="form-row">
                         <button type="submit">Enviar</button>
@@ -101,6 +115,18 @@
                     </tr>
                 </tbody>
             </table>
+        </section>
+        <section class="tarjeta contanto-ubicacion">
+            <h2>¿Dónde estamos?</h2>
+            <p>Nos encontramos en tu centro edicativo favorito. ¡Ven a visitarnos!</p>
+            <!-- Caja contenedora del mapa -->
+            <div class="mapa-contenedor">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.250350392246!2d-4.557037724323129!3d36.740561471059344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f10963ce0f3d%3A0x310ae7d4bb2e8f7b!2sCPIFP%20Alan%20Turing!5e0!3m2!1ses!2ses!4v1764587663445!5m2!1ses!2ses"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
     </main>
     <footer class="pie">
