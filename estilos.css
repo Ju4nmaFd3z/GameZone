@@ -63,7 +63,7 @@ body {
 .menu a.activo {
     color: rgb(192, 216, 240);
     border-bottom: 2px solid rgb(192, 216, 240);
-    padding: 0.2rem;
+    padding-bottom: 0.2rem;
 }
 
 #contenido-principal {
