@@ -356,7 +356,7 @@ button {
 /* Contenedor de las cards */
 .lista-cards--flex {
     display: flex;                  /* Activa el modelo Flex */
-    flex-wrap: wrap;              /* Permite que las cards salten de línea si no caben */
+    flex-wrap: wrap;                /* Permite que las cards salten de línea si no caben */
     gap: 16px;                      /* Espacio uniforme entre ellas */
     justify-content: center;        /* centra horizontalmente todas las cards */
 }
